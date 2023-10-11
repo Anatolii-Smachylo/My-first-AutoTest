@@ -5,7 +5,11 @@
   "description": "SQE training program",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "coverage": "c8 npm test",
+    "lint": "eslint ./ --fix",
+    "prepare": "husky install"
+    
   },
   "author": "Anatolii Smachylo",
   "license": "ISC",
