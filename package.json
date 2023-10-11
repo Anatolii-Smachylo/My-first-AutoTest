@@ -1,0 +1,23 @@
+{
+  "name": "my-first-autotest",
+  "type":"module",
+  "version": "1.0.0",
+  "description": "SQE training program",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Anatolii Smachylo",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.51.0",
+    "eslint-config-google": "^0.14.0"
+  },
+  "dependencies": {
+    "c8": "^8.0.1",
+    "chai": "^4.3.10",
+    "husky": "^8.0.3",
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3"
+  }
+}
