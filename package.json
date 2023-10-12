@@ -1,6 +1,6 @@
 {
   "name": "my-first-autotest",
-  "type":"module",
+  "type": "module",
   "version": "1.0.0",
   "description": "SQE training program",
   "main": "index.js",
@@ -8,12 +8,16 @@
     "test": "mocha",
     "coverage": "c8 npm test",
     "lint": "eslint ./ --fix",
-    "prepare": "husky install"
-    
+    "prepare": "husky install",
+    "wdio": "wdio run ./wdio.conf.js"
   },
   "author": "Anatolii Smachylo",
   "license": "ISC",
   "devDependencies": {
+    "@wdio/cli": "^8.17.0",
+    "@wdio/local-runner": "^8.17.0",
+    "@wdio/mocha-framework": "^8.17.0",
+    "@wdio/spec-reporter": "^8.17.0",
     "eslint": "^8.51.0",
     "eslint-config-google": "^0.14.0"
   },
