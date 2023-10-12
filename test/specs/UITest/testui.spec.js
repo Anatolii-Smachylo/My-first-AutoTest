@@ -37,7 +37,8 @@ describe('HOME TASK Task 1', () => {
     await browser.setWindowSize(1920, 1080);
     // Find language controle and click
     await browser.$(
-        'div[class*="header__control"] button[class*="location-selector__button"]',
+        // eslint-disable-next-line max-len
+        'div[class*="header__control"] button[class*="location-selector__but"]',
     ).click();
     // await browser.pause(10000);
     // Find Ukrainian language
