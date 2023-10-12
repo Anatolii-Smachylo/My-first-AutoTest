@@ -1,7 +1,7 @@
 // import {expect, browser} from '@wdio/globals';
 
 describe('HOME TASK Task 1', () => {
-  /* it('Check the title is correct', async () =>{
+  it('Check the title is correct', async () =>{
     await browser.url('https://www.epam.com/');
     const pageTitle = await browser.getTitle();
 
@@ -18,7 +18,7 @@ describe('HOME TASK Task 1', () => {
     const bodyClass = await browser.$('body').getAttribute('class');
     // Alocate toggle
     const toggle = await $(
-        '//*[@id="wrapper"]/div[2]/div[1]/header/div/div/section/div'
+        '//*[@id="wrapper"]/div[2]/div[1]/header/div/div/section/div',
     );
     // const toggle = await browser.$('//div[@class="theme-switcher"]');
     // const toggle = await browser.$('.theme-switcher .switch')
@@ -29,7 +29,7 @@ describe('HOME TASK Task 1', () => {
     const modeType = await browser.$('body').getAttribute('class');
     expect(bodyClass).not.toEqual(modeType);
     // console.log(bodyClass, modeType);
-  }); */
+  }); 
   it('Check that allow to change language to UA', async () =>{
     // Open Url
     await browser.url('https://www.epam.com/');
