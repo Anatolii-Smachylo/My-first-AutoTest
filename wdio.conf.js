@@ -52,9 +52,17 @@ export const config = {
   //
   capabilities: [{
     browserName: 'chrome',
+    'goog:chromeOptions': {
+      args: ['--start-maximized'], // Optional: To start Chrome maximized
+    }
   }, {
     browserName: 'firefox',
-  }],
+    'moz:firefoxOptions': {
+      args: ['---window-size=1920,1080'], // Optional: To set the window size
+    }
+    //windowSize: '1920x1080', // Specify the desired width x height
+    }
+  ],
 
   //
   // ===================
